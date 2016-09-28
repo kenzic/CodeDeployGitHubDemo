@@ -3,7 +3,7 @@ deployment:
     branch: master
     codedeploy:
       CodeDeployGitHubDemo-App:
-        application_root: /
+        application_root: /site1
         revision_location:
           revision_type: S3
           s3_location:
