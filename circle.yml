@@ -1,0 +1,14 @@
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      CodeDeployGitHubDemo-App:
+        application_root: /
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: hzdg-circleci-app-buck
+            key_pattern: my-app/my-app-{SHORT_COMMIT}-{BUILD_NUM}
+        region: us-east-1
+        deployment_group: CodeDeployGitHubDemo-DepGrp
+        deployment_config: CodeDeployDefault.AllAtOnce
