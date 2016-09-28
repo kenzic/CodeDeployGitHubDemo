@@ -12,3 +12,7 @@ deployment:
         region: us-east-1
         deployment_group: CodeDeployGitHubDemo-DepGrp
         deployment_config: CodeDeployDefault.AllAtOnce
+
+test:
+  override:
+    - echo "test"
