@@ -1,1 +1,1 @@
-cp ./config/apache.conf /etc/httpd/conf.d/v_hosts.on/
+cp `pwd`/config/apache.conf /etc/httpd/conf.d/v_hosts.on/
